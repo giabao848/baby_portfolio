@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<meta name="description" content="Bài tập 2: Tìm kiếm và đánh giá thông tin học thuật. Mục tiêu, quá trình thực hiện và sản phẩm cuối cùng.">
+<title>Bài 2: Tìm kiếm và đánh giá thông tin học thuật – E-Portfolio</title>
+</head>
+<body>
+<header id="site-header"></header>
+<main>
+  <div class="gingham pagehead"><div class="name-card"><h1>Bài 2: Tìm kiếm và đánh giá thông tin học thuật</h1><p>Mình tìm tài liệu về một chủ đề thuộc ngành học của mình, chọn lọc nguồn đáng tin và ghi lại lý do giữ hay loại từng nguồn.</p><div class="tags"><span class="tag">Thông tin học thuật</span><span class="tag">Nhập môn công nghệ số và AI</span></div></div></div>
+  <div class="wrap">
+    <section id="muc-tieu"><h2>Mục tiêu của bài tập</h2>
+      <ul class="cards">
+        <li><h3>Tìm đúng nguồn</h3><p>Dùng cơ sở dữ liệu học thuật và từ khóa phù hợp.</p></li>
+        <li><h3>Đánh giá độ tin cậy</h3><p>Áp dụng tiêu chí rõ ràng để chọn nguồn đủ tốt để trích dẫn.</p></li>
+        <li><h3>Trích dẫn chuẩn</h3><p>Ghi nguồn đầy đủ để người đọc kiểm tra lại được.</p></li>
+      </ul>
+    </section>
+    <section id="qua-trinh"><h2>Quá trình thực hiện</h2>
+      <ol class="steps">
+        <li><h3>Xác định câu hỏi nghiên cứu</h3><p>Thu hẹp chủ đề thành một câu hỏi cụ thể.</p></li>
+        <li><h3>Chọn từ khóa và nơi tìm</h3><p>Tìm bằng từ khóa tiếng Việt và tiếng Anh trên Google Scholar và thư viện trường.</p></li>
+        <li><h3>Sàng lọc kết quả</h3><p>Đọc tiêu đề và tóm tắt, loại bài lạc đề hoặc không rõ tác giả.</p></li>
+        <li><h3>Đánh giá từng nguồn</h3><p>Chấm điểm theo năm tiêu chí ở công cụ bên dưới.</p></li>
+        <li><h3>Tổng hợp và trích dẫn</h3><p>Giữ nguồn đạt yêu cầu và định dạng trích dẫn theo chuẩn môn học.</p></li>
+      </ol>
+    </section>
+    <section id="toan-tu"><h2>Tìm kiếm bằng toán tử nâng cao</h2>
+      <p>Kết quả tìm kiếm học thuật khi dùng các toán tử. Thay ví dụ bằng câu lệnh và kết quả thật của bạn.</p>
+      <div class="box tbl"><table>
+        <thead><tr><th>Toán tử</th><th>Công dụng</th><th>Ví dụ</th><th>Kết quả</th></tr></thead>
+        <tbody>
+          <tr><td><code>AND</code></td><td>Có cả hai từ khóa</td><td><code>"giáo dục âm nhạc" AND "công nghệ số"</code></td><td>[số kết quả, nhận xét]</td></tr>
+          <tr><td><code>OR</code></td><td>Có một trong hai từ</td><td><code>"âm nhạc" OR "nghệ thuật"</code></td><td>[...]</td></tr>
+          <tr><td><code>NOT</code></td><td>Loại bỏ từ không cần</td><td><code>"âm nhạc" NOT "quảng cáo"</code></td><td>[...]</td></tr>
+          <tr><td><code>" "</code></td><td>Tìm đúng cụm từ</td><td><code>"giáo dục âm nhạc"</code></td><td>[...]</td></tr>
+          <tr><td><code>site:</code></td><td>Giới hạn trong một trang web</td><td><code>site:edu.vn "dạy học âm nhạc"</code></td><td>[...]</td></tr>
+          <tr><td><code>filetype:</code></td><td>Chỉ lấy một loại tệp</td><td><code>"dạy học âm nhạc" filetype:pdf</code></td><td>[...]</td></tr>
+          <tr><td><code>intitle:</code></td><td>Từ khóa nằm trong tiêu đề</td><td><code>intitle:"âm nhạc"</code></td><td>[...]</td></tr>
+        </tbody></table></div>
+    </section>
+    <section id="cong-cu"><h2>Công cụ đánh giá nguồn</h2>
+      <p>Kéo thanh trượt để chấm một nguồn theo năm tiêu chí (1 là thấp, 5 là cao).</p>
+      <div class="box tool">
+        <div class="row"><label for="c1">Tính cập nhật</label><input id="c1" type="range" min="1" max="5" value="3"><small>Xuất bản khi nào, số liệu còn dùng được không?</small></div>
+        <div class="row"><label for="c2">Mức liên quan</label><input id="c2" type="range" min="1" max="5" value="3"><small>Có trả lời trực tiếp câu hỏi nghiên cứu không?</small></div>
+        <div class="row"><label for="c3">Thẩm quyền</label><input id="c3" type="range" min="1" max="5" value="3"><small>Tác giả hoặc tổ chức có chuyên môn không?</small></div>
+        <div class="row"><label for="c4">Độ chính xác</label><input id="c4" type="range" min="1" max="5" value="3"><small>Có dữ liệu, phương pháp và tài liệu tham khảo không?</small></div>
+        <div class="row"><label for="c5">Mục đích</label><input id="c5" type="range" min="1" max="5" value="3"><small>Viết để thông tin, hay để bán hàng hoặc thuyết phục?</small></div>
+        <div class="result" aria-live="polite"><strong id="total">15 / 25</strong><div class="bar"><i id="fill"></i></div><span id="verdict"></span></div>
+      </div>
+    </section>
+    <section id="san-pham"><h2>Sản phẩm cuối cùng</h2>
+      <iframe
+        src="image/bai2.pdf"
+        width="100%"
+        height="600px">
+    </iframe>
+    </section>
+    <section id="nhin-lai"><h2>Nhìn lại bài tập</h2><p>[Bạn học được gì? Khó khăn nào đã gặp? Lần sau sẽ làm khác ra sao?]</p></section>
+    <nav class="pager" id="pager" aria-label="Chuyển bài"></nav>
+  </div>
+</main>
+<footer id="site-footer"></footer>
+<script src="site.js"></script>
+<script>
+const SOURCES = [
+  {title:"Tên bài báo khoa học 1", meta:"Tác giả A, 2023 · Tên tạp chí", score:22, note:"Có phương pháp và số liệu rõ ràng, tác giả thuộc viện nghiên cứu."},
+  {title:"Báo cáo của cơ quan quản lý", meta:"Bộ/Tổ chức X, 2022 · Báo cáo", score:20, note:"Nguồn chính thức, số liệu rõ ràng."},
+  {title:"Bài viết trên blog cá nhân", meta:"Không rõ tác giả, 2019", score:11, note:"Không có tài liệu tham khảo, nội dung mang tính quảng cáo."}
+];
+const THRESHOLD = 17;
+const ids = ["c1","c2","c3","c4","c5"].map(i => document.getElementById(i));
+function update(){
+  const s = ids.reduce((a,el) => a + Number(el.value), 0);
+  document.getElementById("total").textContent = s + " / 25";
+  document.getElementById("fill").style.width = (s/25*100) + "%";
+  document.getElementById("verdict").textContent = s >= 20 ? "Nguồn đáng tin, nên dùng."
+    : s >= THRESHOLD ? "Dùng được, nên đối chiếu thêm với nguồn khác." : "Độ tin cậy thấp, nên loại hoặc tìm nguồn thay thế.";
+}
+ids.forEach(el => el.addEventListener("input", update)); update();
+const list = document.getElementById("list");
+function render(f){
+  list.innerHTML = "";
+  SOURCES.filter(s => f === "all" || (f === "keep") === (s.score >= THRESHOLD)).forEach(s => {
+    const li = document.createElement("li"), sc = document.createElement("span"), h = document.createElement("h3"), m = document.createElement("div"), p = document.createElement("p");
+    sc.className = "score"; sc.textContent = s.score + "/25"; h.textContent = s.title; m.className = "meta"; m.textContent = s.meta; p.textContent = s.note;
+    li.append(sc, h, m, p); list.appendChild(li);
+  });
+  if(!list.children.length){ const li = document.createElement("li"); li.textContent = "Chưa có nguồn nào trong nhóm này."; list.appendChild(li); }
+}
+document.querySelectorAll(".filters button").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll(".filters button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  render(b.dataset.f);
+}));
+render("all");
+</script>
+</body>
+</html>
