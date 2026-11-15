@@ -170,3 +170,10 @@ footer::before{content:"♡ ✿ ♡";display:block;letter-spacing:.5em;margin-bo
 .yarn{width:30px;height:30px}
 .hobby:hover .yarn,.hobby:focus-visible .yarn{animation:spin 1.2s linear infinite}
 @keyframes spin{to{rotate:360deg}}
+/* Công cụ đã dùng */
+.usedtools{display:flex;flex-wrap:wrap;gap:1rem;padding:0;margin:0;list-style:none}
+.usedtools li{display:flex;align-items:center;gap:.8rem;background:#fff;border:3px solid var(--pink);border-radius:24px;padding:.6rem 1.3rem .6rem .7rem;box-shadow:0 5px 0 var(--pink-l);transition:transform .2s,box-shadow .2s}
+.usedtools li:hover{transform:translateY(-4px) rotate(-1deg);box-shadow:0 9px 0 var(--pink)}
+.usedtools .ti{flex:none;width:44px;height:44px;border-radius:50%;background:var(--pink-l);display:grid;place-items:center;font-size:1.4rem}
+.usedtools b{display:block;font:800 1.05rem var(--display);color:var(--pink-d);line-height:1.2}
+.usedtools small{display:block;opacity:.85;font-size:.88rem;line-height:1.35}
