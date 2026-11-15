@@ -1,5 +1,5 @@
 // ===== CHỈNH Ở ĐÂY: thông tin cá nhân hiện trên mọi trang =====
-const SITE = { name: "Đoàn Thanh Thảo", major: "Sư phạm Âm nhạc", year: "1", updated: "07/11/2026" };
+const SITE = { name: "Đoàn Thanh Thảo", major: "Sư phạm Âm nhạc", year: "2", updated: "07/11/2026" };
 const NAV = [
   { href: "index.html", label: "Giới thiệu", icon: "♡" },
   { href: "du-an.html", label: "Dự án", icon: "✿", also: ["bai-1.html", "bai-2.html", "bai-3.html", "bai-4.html", "bai-5.html", "bai-6.html"] },
