@@ -1,5 +1,12 @@
 // ===== CHỈNH Ở ĐÂY: thông tin cá nhân hiện trên mọi trang =====
-const SITE = { name: "Đoàn Thanh Thảo", major: "Sư phạm Âm nhạc", year: "2", updated: "07/11/2026" };
+const SITE = { 
+  name: "Đoàn Thanh Thảo", 
+  studentId: "2552210208",
+  className: "INF2501_3",
+  course: "Nhập môn công nghệ số và AI",
+  major: "Sư phạm Âm nhạc", 
+  year: "2"
+};
 const NAV = [
   { href: "index.html", label: "Giới thiệu", icon: "♡" },
   { href: "du-an.html", label: "Dự án", icon: "✿", also: ["bai-1.html", "bai-2.html", "bai-3.html", "bai-4.html", "bai-5.html", "bai-6.html"] },
@@ -34,7 +41,7 @@ const BOW = '<svg viewBox="0 0 120 80" aria-hidden="true"><g stroke="#8c1730" st
   }
   document.querySelectorAll(".bow").forEach(e => { e.innerHTML = BOW; });
   const f = document.getElementById("site-footer");
-  if (f) f.textContent = "E-Portfolio của " + SITE.name + " · Cập nhật " + SITE.updated;
+  if (f) f.textContent = "Họ và tên: " + SITE.name + " · MSV: " + SITE.studentId + " · Lớp: " + SITE.className + " · Học phần: " + SITE.course;
   document.querySelectorAll("[data-name]").forEach(e => e.textContent = SITE.name);
   document.querySelectorAll("[data-major]").forEach(e => e.textContent = SITE.major);
   document.querySelectorAll("[data-year]").forEach(e => e.textContent = SITE.year);
